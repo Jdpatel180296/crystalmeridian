@@ -95,6 +95,7 @@
           );
         background-size: cover;
         background-position: center;
+        filter: brightness(0.9) saturate(0.98) contrast(1.02);
       }
 
       header {
@@ -217,9 +218,9 @@
         inset: 0;
         background: radial-gradient(
           120% 90% at 20% 80%,
-          rgba(2, 18, 31, 0.94),
-          rgba(2, 18, 31, 0.5) 60%,
-          rgba(2, 18, 31, 0.85)
+          rgba(2, 18, 31, 0.82),
+          rgba(2, 18, 31, 0.45) 58%,
+          rgba(2, 18, 31, 0.72)
         );
       }
       .open .wrap {
@@ -282,7 +283,7 @@
       .principal:hover .shot,
       .contact:hover .shot {
         transform: scale(1.08);
-        filter: saturate(1.2) contrast(1.06) brightness(1.04);
+        filter: brightness(0.96) saturate(1.08) contrast(1.05);
       }
       .phase::after {
         content: "";
@@ -292,41 +293,52 @@
       .p1::after {
         background: linear-gradient(
           to top,
-          rgba(2, 18, 31, 0.95),
-          rgba(2, 18, 31, 0.25)
+          rgba(2, 18, 31, 0.9),
+          rgba(2, 18, 31, 0.28)
         );
       }
       .p2::after {
         background: linear-gradient(
           to top,
-          rgba(6, 47, 78, 0.95),
-          rgba(6, 47, 78, 0.2)
+          rgba(6, 47, 78, 0.9),
+          rgba(6, 47, 78, 0.25)
         );
       }
       .p3::after {
         background: linear-gradient(
           to top,
-          rgba(10, 111, 168, 0.92),
-          rgba(10, 111, 168, 0.18)
+          rgba(10, 111, 168, 0.88),
+          rgba(10, 111, 168, 0.2)
         );
       }
       .p4::after {
         background: linear-gradient(
           to top,
-          rgba(0, 185, 210, 0.9),
-          rgba(0, 120, 160, 0.15)
+          rgba(0, 185, 210, 0.82),
+          rgba(0, 120, 160, 0.2)
         );
       }
       .p5::after {
         background: linear-gradient(
           to top,
-          rgba(59, 235, 207, 0.88),
-          rgba(0, 150, 170, 0.15)
+          rgba(59, 235, 207, 0.8),
+          rgba(0, 150, 170, 0.18)
         );
       }
       .p4 .pcopy,
       .p5 .pcopy {
-        color: #02121f;
+        color: #031b2a;
+      }
+      .p4 .pcopy h2,
+      .p5 .pcopy h2,
+      .p4 .pcopy p,
+      .p5 .pcopy p,
+      .p4 .pcopy .tags span,
+      .p5 .pcopy .tags span,
+      .p4 .pcopy .step,
+      .p5 .pcopy .step {
+        color: #031b2a;
+        text-shadow: 0 2px 10px rgba(255, 255, 255, 0.22);
       }
       .phase .wrap {
         position: relative;
@@ -548,7 +560,7 @@
       <!-- SHOT 02 — raw land / graded site, California hills or coastal parcel, dusk. 2400×1500. -->
       <div
         class="shot"
-        style="--img: url(&quot;images/asc-land.jpg&quot;)"
+        style="--img: url(&quot;images/asc-land.jpeg&quot;)"
       ></div>
       <div class="wrap pcopy reveal">
         <div class="step">1</div>
@@ -616,7 +628,7 @@
       <!-- SHOT 05 — completed building, bright daylight, turquoise pool or water feature, luxury finish. 2400×1500. -->
       <div
         class="shot"
-        style="--img: url(&quot;images/asc-deliver.jpg&quot;)"
+        style="--img: url(&quot;images/asc-deliver.jpeg&quot;)"
       ></div>
       <div class="wrap pcopy reveal">
         <div class="step">4</div>
@@ -639,7 +651,7 @@
       <!-- SHOT 06 — stabilised asset in operation: residents, landscaping, bright coastal light. 2400×1500. -->
       <div
         class="shot"
-        style="--img: url(&quot;images/asc-operate.jpg&quot;)"
+        style="--img: url(&quot;images/asc-operate-1.jpg&quot;)"
       ></div>
       <div class="wrap pcopy reveal">
         <div class="step">5</div>
@@ -681,7 +693,7 @@
         <!-- SHOT 07 — Amilkar Pena, on-site environmental portrait, natural light. 1400×1700. -->
         <div
           class="shot reveal"
-          style="--img: url(&quot;images/amilkar-pena.jpg&quot;)"
+          style="--img: url(&quot;images/amilkar-pena.jpeg&quot;)"
         ></div>
       </div>
     </section>
